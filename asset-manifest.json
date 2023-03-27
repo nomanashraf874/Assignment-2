@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/memorygame/static/css/main.4fc08050.css",
-    "main.js": "/memorygame/static/js/main.50df4c19.js",
-    "static/js/787.ee92e45e.chunk.js": "/memorygame/static/js/787.ee92e45e.chunk.js",
-    "index.html": "/memorygame/index.html",
-    "main.4fc08050.css.map": "/memorygame/static/css/main.4fc08050.css.map",
-    "main.50df4c19.js.map": "/memorygame/static/js/main.50df4c19.js.map",
-    "787.ee92e45e.chunk.js.map": "/memorygame/static/js/787.ee92e45e.chunk.js.map"
+    "main.css": "/Assignment-2/static/css/main.4fc08050.css",
+    "main.js": "/Assignment-2/static/js/main.8081a9c8.js",
+    "static/js/787.ee92e45e.chunk.js": "/Assignment-2/static/js/787.ee92e45e.chunk.js",
+    "index.html": "/Assignment-2/index.html",
+    "main.4fc08050.css.map": "/Assignment-2/static/css/main.4fc08050.css.map",
+    "main.8081a9c8.js.map": "/Assignment-2/static/js/main.8081a9c8.js.map",
+    "787.ee92e45e.chunk.js.map": "/Assignment-2/static/js/787.ee92e45e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4fc08050.css",
-    "static/js/main.50df4c19.js"
+    "static/js/main.8081a9c8.js"
   ]
 }
