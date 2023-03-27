@@ -10,6 +10,7 @@ function App() {
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
+  const [gameCompleted, setGameCompleted] = useState(false); // Add new state variable
 
   // Shuffle the cards.
   const shuffleCards = () => {
@@ -20,6 +21,7 @@ function App() {
     setChoiceTwo(null);
     setCards(shuffledCards);
     setTurns(0);
+    setGameCompleted(false); // Reset game completion status
   };
 
   // Handle a choice.
@@ -51,6 +53,14 @@ function App() {
     }
   }, [choiceOne, choiceTwo]);
 
+  // Check if all cards have been matched.
+  useEffect(() => {
+    const allCardsMatched = cards.every((card) => card.matched === true);
+    if (allCardsMatched) {
+      setGameCompleted(true); // Update game completion status
+    }
+  }, [cards]);
+
   // Shuffle the cards automatically when the game is started.
   useEffect(() => {
     shuffleCards();
@@ -72,6 +82,7 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
+      {gameCompleted && <p>Congratulations! You've completed the game.</p>}
     </div>
   );
 } 
